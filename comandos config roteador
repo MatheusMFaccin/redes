@@ -24,7 +24,7 @@ exit (sai da interface)
 
 exit (sair do modo de configuração)
 
-wr (write memory — salvar configuração)
+wr (salvar configuração)
 
 sh run (show running-config)
 
@@ -40,12 +40,11 @@ conf t (entrar no modo de configuração)
 
 ip route 192.168.0.0 255.255.255.248 192.168.0.18  (Configura uma rota estática para a rede 192.168.0.0/29 via o próximo salto 192.168.0.18)
 
-exit
+exit  (Sai do modo de configuração)
 
-Sai do modo de configuração e volta para o modo privilegiado.
+wr (salvar configuração)
 
-wr
+sh ip route (mostra as rotas)
 
-Salva a configuração atual (write memory).
 
-sh ip route
+obs: é preciso salvar as configurações para mostrar com o comando sh ip route

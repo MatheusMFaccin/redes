@@ -1,0 +1,31 @@
+roteador 2621xm:
+
+enable
+
+sh start (show startup-config)
+
+conf t (configure terminal)
+
+int f 0/0 (interface FastEthernet0/0)
+
+ip add 192.168.0.1 255.255.255.248 (endereço ip) (mascara da rede)
+
+no shut (no shutdown)
+
+exit (sair da interface)
+
+int f 0/1 (interface FastEthernet0/1)
+
+ip add 192.168.0.18 255.255.255.252
+
+no shut (no shutdown)
+
+exit (sai da interface)
+
+exit (sair do modo de configuração)
+
+wr (write memory — salvar configuração)
+
+sh run (show running-config)
+
+enable

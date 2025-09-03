@@ -1,0 +1,43 @@
+int s 0/0
+
+ip add <ip da placa de rede> <mascara da placa de rede>
+
+
+do sh int s 0/1    // mostra a configuração da interface serial 0/0
+
+
+encapsulation ppp
+
+
+clock rate 250000
+
+no shut
+
+exit
+
+exit
+
+wr
+
+
+roteador 2
+
+
+en
+
+conf t
+
+int s 0/1
+
+ip add <ip da placa de rede> <mascara da placa de rede>
+
+encapsulation ppp
+
+no shut
+
+
+exit
+
+exit
+
+wr
